@@ -29,6 +29,7 @@ $(document).ready(function() {
 
     $('#source').submit(function(event) {
         event.preventDefault();
+        document.getElementById("insertThumbs").innerHTML= "";
         // alert(document.getElementById("selection").value);
         var selectedNews = document.getElementById("selection").value;
         $.ajax({
@@ -38,6 +39,7 @@ $(document).ready(function() {
             success: function(data) {
                 console.log(data);
                 if (data.status === "ok") {
+                    $("#headlineText").removeAttr("hidden");
                     for (var i = 0; i < data.articles.length; i++) {
 
                         // console.log(data.articles[i].title);
