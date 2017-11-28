@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>NewsAPI V1</title>
@@ -8,8 +9,9 @@
     Page requires a key.js file with the following format
     var APIKEY = "apikey" from newsapi.org
     -->
-    
+
 </head>
+
 <body>
     <div class="container">
         <form id="source">
@@ -20,14 +22,23 @@
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-        <div id="headlines">
-            
+    </div>
+    <!--<div id="headlines">-->
+
+    <!--</div>-->
+
+    <h1 class="text-center">Headlines</h1>
+    <div class="container text-center">
+        <div class="row">
+            <div id="insertThumbs">
+            </div>
         </div>
     </div>
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="key.js"></script>
     <script src="index.js"></script>
 </body>
+
 </html>
