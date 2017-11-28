@@ -48,7 +48,7 @@ $(document).ready(function() {
                         thumbnails.setAttribute("class", "thumbnail");
                         thumbnails.setAttribute("class", "col-xs-4");
                         thumbnails.setAttribute("style", "width: 30%");
-                        thumbnails.innerHTML = "<div class='thumbnail'><img class='img-responsive' src=" + data.articles[i].urlToImage + "></img><div class='caption'><h3><a href=" + data.articles[i].url + ">" + data.articles[i].title + "</a></h3></div></div>";
+                        thumbnails.innerHTML = "<div class='thumbnail'><img class='img-responsive' src=" + data.articles[i].urlToImage + "></img><div class='caption'><h3><a href=" + data.articles[i].url + ">" + data.articles[i].title + "</a></h3><p>"+data.articles[i].description+"</p></div></div>";
 
                         document.getElementById("insertThumbs").appendChild(thumbnails);
 
